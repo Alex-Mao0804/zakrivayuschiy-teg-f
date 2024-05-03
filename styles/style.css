@@ -157,7 +157,7 @@
   font-size: 14px;
   text-shadow: -1px 0 var(--bg-color), 0 1px var(--bg-color),
     1px 0 var(--bg-color), 0 -1px var(--bg-color);
-  inset-inline-end: 25px;
+  inset-inline-end: clamp(0.8125rem, 0.5484rem + 1.1268vw, 1.5625rem);
   inset-block-start: 25px;
   mix-blend-mode: hard-light;
 }
@@ -302,6 +302,7 @@
   .sparks {
     animation: heart-sparks 0.3s ease-in 0.3s;
   }
+  animation: heart-scale 0.3s ease-in 0.1s 1 alternate;
 }
 
 .sparks {
