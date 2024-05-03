@@ -14,7 +14,7 @@
 */
 
 @keyframes header-arrow {
-  0% {
+  0%, 100% {
     margin-inline-start: -20px;
   }
 
