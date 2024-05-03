@@ -1,1 +1,18 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --font-accent: "PressStart2P-Regular", monospace;
+  --font-main: "Inter-Variable", sans-serif;
+  --section-wdth: clamp(26.5625rem, 19.3658rem + 27.0936vw, 43.75rem);
+  --dialog-wdth: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
+  --floppy-svg: 21px;
+  --heart-red: #FF0000;
+  --pad30_40: 30px;
+  /* --wght-title: 700;
+  --wght-main: 400;
+  --bg-color: #FFFFFF;
+  --accent-color: #000000;
+  --bg-image:
+  repeating-linear-gradient(to right, #d3d3d3 0px 2px, transparent 2px 4px),
+  repeating-linear-gradient(to bottom, #d3d3d3 0px 2px, transparent 2px 4px),
+  linear-gradient(to bottom, #e7e7e7, #1a1a1a); */
+}
