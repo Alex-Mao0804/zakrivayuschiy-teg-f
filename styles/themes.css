@@ -14,7 +14,6 @@
   repeating-linear-gradient(to bottom, #000 0px 2px, transparent 2px 4px),
   linear-gradient(to bottom, #007f0c, #004306);
   --color-btn: #00CC14;
-  /* --text-shadow:  */
 }
 
 :root.theme-light {
