@@ -28,7 +28,7 @@
 
 .page {
   /* position: relative; */
-  margin: 0 auto;
+  margin: 100px auto;
   color: var(--accent-color);
   font-family: var(--font-main);
   font-size: 18px;
@@ -48,7 +48,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 100px 0;
+  margin-block-end: 100px;
   border: 2px solid var(--accent-color);
   padding-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
   font-family: var(--font-accent);
