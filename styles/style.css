@@ -27,7 +27,7 @@
 }
 
 .page {
-  position: relative;
+  /* position: relative; */
   margin: 0 auto;
   color: var(--accent-color);
   font-family: var(--font-main);
@@ -383,6 +383,7 @@
 }
 
 .dialog__floppy-svg {
+  inline-size: 39px;
   fill: var(--accent-color);
   aspect-ratio: 1 / 1;
 }
