@@ -92,7 +92,7 @@
   content: "▶";
   position: absolute;
   margin-inline-start: -20px;
-  animation: header-arrow 0.5s infinite ease-in-out;
+  animation: header-arrow 0.5s infinite ease-in-out alternate;
 }
 
 .theme-menu__button:disabled {
@@ -245,69 +245,6 @@
   mix-blend-mode: difference;
 }
 
-.like-icon {
-  .heart {
-    .core {
-      opacity: 0;
-      fill: var(--accent-color);
-      transition: opacity 0.3s linear 0.03s;
-    }
-
-    .main-body {
-      opacity: 0;
-      fill: var(--accent-color);
-      transition: opacity 0.3s linear;
-    }
-
-    .contour {
-      fill: var(--accent-color);
-      transition: fill 0.1s linear;
-    }
-  }
-}
-
-.like-icon:hover {
-  .heart {
-    .core {
-      opacity: 1;
-      transition: opacity 0.3s linear;
-    }
-
-    .main-body {
-      opacity: 1;
-      transition: opacity 0.3s linear 0.05s;
-    }
-  }
-}
-
-.like-icon.is-liked {
-  .heart {
-    .core {
-      opacity: 1;
-      fill: var(--heart-red);
-      transition: fill 0.3s linear;
-    }
-
-    .main-body {
-      opacity: 1;
-      fill: var(--heart-red);
-      transition: fill 0.3s linear 0.05s;
-    }
-
-    .contour {
-      fill: var(--heart-red);
-      transition: fill 0.3s linear 0.06s;
-    }
-  }
-  .sparks {
-    animation: heart-sparks 0.3s ease-in 0.3s;
-  }
-  animation: heart-scale 0.3s ease-in 0.1s 1 alternate;
-}
-
-.sparks {
-  opacity: 0;
-}
 
 .footer {
   display: flex;

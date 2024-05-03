@@ -14,12 +14,11 @@
 */
 
 @keyframes header-arrow {
-  0%, 100% {
-    margin-inline-start: -20px;
+  from {
+    transform: translateX(0px);
   }
-
-  50% {
-    margin-inline-start: -16px;
+  to {
+    transform: translateX(4px);
   }
 }
 
@@ -49,4 +48,68 @@
   100% {
     opacity: 0;
   }
+}
+
+.like-icon {
+  .heart {
+    .core {
+      opacity: 0;
+      fill: var(--accent-color);
+      transition: opacity 0.3s linear 0.03s;
+    }
+
+    .main-body {
+      opacity: 0;
+      fill: var(--accent-color);
+      transition: opacity 0.3s linear;
+    }
+
+    .contour {
+      fill: var(--accent-color);
+      transition: fill 0.1s linear;
+    }
+  }
+}
+
+.like-icon:hover {
+  .heart {
+    .core {
+      opacity: 1;
+      transition: opacity 0.3s linear;
+    }
+
+    .main-body {
+      opacity: 1;
+      transition: opacity 0.3s linear 0.05s;
+    }
+  }
+}
+
+.like-icon.is-liked {
+  .heart {
+    .core {
+      opacity: 1;
+      fill: var(--heart-red);
+      transition: fill 0.3s linear;
+    }
+
+    .main-body {
+      opacity: 1;
+      fill: var(--heart-red);
+      transition: fill 0.3s linear 0.05s;
+    }
+
+    .contour {
+      fill: var(--heart-red);
+      transition: fill 0.3s linear 0.06s;
+    }
+  }
+  .sparks {
+    animation: heart-sparks 0.3s ease-in 0.3s;
+  }
+  animation: heart-scale 0.3s ease-in 0.1s 1 alternate;
+}
+
+.sparks {
+  opacity: 0;
 }
