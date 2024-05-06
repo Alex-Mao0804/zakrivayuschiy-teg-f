@@ -50,7 +50,32 @@
   }
 }
 
-.like-icon {
+/* .card__icon-button:active {
+  .heart {
+    .core {
+      fill: var(--heart-red);
+      transition: fill 0.3s linear;
+    }
+
+    .main-body {
+      fill: var(--heart-red);
+      transition: fill 0.3s linear 0.05s;
+    }
+  }
+} */
+
+.card__icon-button:active .core {
+  fill: var(--heart-red);
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:active .main-body {
+  fill: var(--heart-red);
+  transition: fill 0.3s linear 0.05s;
+}
+
+
+/* .like-icon {
   .heart {
     .core {
       opacity: 0;
@@ -69,9 +94,36 @@
       transition: fill 0.1s linear;
     }
   }
+} */
+
+.like-icon .core {
+  opacity: 0;
+  fill: var(--accent-color);
+  transition: opacity 0.3s linear 0.03s;
 }
 
-.like-icon:hover {
+.like-icon .main-body {
+  opacity: 0;
+  fill: var(--accent-color);
+  transition: opacity 0.3s linear;
+}
+
+.like-icon .contour {
+  fill: var(--accent-color);
+  transition: fill 0.1s linear;
+}
+
+.like-icon:hover .core {
+  opacity: 1;
+  transition: opacity 0.3s linear;
+}
+
+.like-icon:hover .main-body {
+  opacity: 1;
+  transition: opacity 0.3s linear 0.05s;
+}
+
+/* .like-icon:hover {
   .heart {
     .core {
       opacity: 1;
@@ -83,9 +135,9 @@
       transition: opacity 0.3s linear 0.05s;
     }
   }
-}
+} */
 
-.like-icon.is-liked {
+/* .like-icon.is-liked {
   .heart {
     .core {
       opacity: 1;
@@ -108,6 +160,36 @@
     animation: heart-sparks 0.3s ease-in 0.3s;
   }
   animation: heart-scale 0.3s ease-in 0.1s 1 alternate;
+} */
+
+
+.like-icon.is-liked .core {
+  opacity: 1;
+  fill: var(--heart-red);
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked  .main-body {
+  opacity: 1;
+  fill: var(--heart-red);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon.is-liked  .contour {
+  fill: var(--heart-red);
+  transition: fill 0.3s linear 0.06s;
+}
+
+.like-icon.is-liked  .sparks {
+  animation: heart-sparks 0.3s ease-in 0.3s;
+}
+
+.like-icon.is-liked {
+  animation: heart-scale 0.3s ease-in 0.1s 1 alternate;
+}
+
+.like-icon.is-liked .sparks {
+  opacity: 0;
 }
 
 .sparks {
