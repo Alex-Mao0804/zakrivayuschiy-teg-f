@@ -50,18 +50,19 @@
   }
 }
 
-.card__icon-button:active .core,
-.card__icon-button:active .main-body,
+.card__icon-button:active .heart .core,
+.card__icon-button:active .heart .main-body,
 .like-icon.is-liked .heart > * {
   fill: var(--heart-red);
 }
 
-.card__icon-button:active .core,
-.like-icon.is-liked .core {
+.card__icon-button:active .heart .core,
+.like-icon.is-liked .heart .core {
   transition: fill 0.3s linear;
 }
 
-.card__icon-button:active .main-body {
+.card__icon-button:active .heart .main-body,
+.like-icon.is-liked .heart .main-body {
   transition: fill 0.3s linear 0.05s;
 }
 
@@ -84,7 +85,7 @@
   transition: opacity 0.3s linear;
 }
 
-.like-icon .contour {
+.like-icon .heart .contour {
   transition: fill 0.1s linear;
 }
 
@@ -103,16 +104,12 @@
   transition: opacity 0.3s linear 0.05s;
 }
 
-.like-icon.is-liked  .main-body {
-  transition: fill 0.3s linear 0.05s;
-}
-
-.like-icon.is-liked  .contour {
+.like-icon.is-liked .heart .contour {
   transition: fill 0.3s linear 0.06s;
 }
 
 .like-icon.is-liked  .sparks {
-  animation: heart-sparks 0.3s ease-in 0.3s;
+  animation: heart-sparks 0.3s ease-in 0.3s alternate;
 }
 
 .like-icon.is-liked {

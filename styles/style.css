@@ -146,6 +146,7 @@
 
 .card__img {
   display: block;
+  object-fit: cover;
   inline-size: 100%;
   block-size: auto;
   aspect-ratio: 1 / 1;
@@ -294,7 +295,7 @@
   inline-size: var(--dialog-wdth);
 }
 
-.dialog__floppy-h2 {
+.dialog__floppy {
   display: grid;
   grid-template-columns: 39px 1fr;
   align-items: center;
@@ -302,7 +303,7 @@
   margin-block-end: 30px;
 }
 
-.dialog__h2 {
+.dialog__title {
   font-size: inherit;
   line-height: 150%;
 }

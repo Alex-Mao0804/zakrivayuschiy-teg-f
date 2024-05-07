@@ -1,6 +1,6 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --font-accent: "PressStart2P-Regular", fantasy;
+  --font-accent: "PressStart2P", fantasy;
   --font-main: "Inter-Variable", sans-serif;
   --section-wdth: clamp(26.5625rem, 19.3658rem + 27.0936vw, 43.75rem);
   --dialog-wdth: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
