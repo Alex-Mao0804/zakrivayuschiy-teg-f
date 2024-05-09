@@ -27,7 +27,9 @@
 }
 
 .page {
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: var(--accent-color);
   font-family: var(--font-main);
   font-size: 18px;
@@ -37,10 +39,8 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  inline-size: var(--section-wdth);
   font-variation-settings: "wght" var(--wght-main);
   min-inline-size: 320px;
-  max-inline-size: 100%;
   min-block-size: 100dvb;
 }
 
@@ -54,6 +54,8 @@
   font-family: var(--font-accent);
   text-transform: uppercase;
   background-color: var(--bg-color);
+  inline-size: var(--section-wdth);
+  max-inline-size: 100%;
 }
 
 .header__logo-group {
@@ -123,6 +125,11 @@
   transition: transform 0.3s ease;
   transform: scaleX(0);
   transform-origin: left;
+}
+
+.card {
+  inline-size: var(--section-wdth);
+  max-inline-size: 100%;
 }
 
 .card__list-item {
