@@ -27,7 +27,7 @@
 }
 
 .page {
-  margin: 100px auto;
+  margin: 0 auto;
   color: var(--accent-color);
   font-family: var(--font-main);
   font-size: 18px;
@@ -45,6 +45,7 @@
 }
 
 .header {
+  margin-block-start: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
